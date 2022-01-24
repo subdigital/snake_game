@@ -55,30 +55,18 @@ impl Snake {
 
     pub fn turn_left(&mut self) {
         self.next_direction = Some(Direction::Left);
-        // if self.direction != Direction::Right {
-        //     self.direction = Direction::Left;
-        // }
     }
 
     pub fn turn_right(&mut self) {
         self.next_direction = Some(Direction::Right);
-        // if self.direction != Direction::Left {
-        //     self.direction = Direction::Right;
-        // }
     }
 
     pub fn turn_up(&mut self) {
         self.next_direction = Some(Direction::Up);
-        // if self.direction != Direction::Down {
-        //     self.direction = Direction::Up;
-        // }
     }
 
     pub fn turn_down(&mut self) {
         self.next_direction = Some(Direction::Down);
-        // if self.direction != Direction::Up {
-        //     self.direction = Direction::Down;
-        // }
     }
 
     pub fn draw(&self, context: &Context, graphics: &mut G2d) {
